@@ -66,7 +66,7 @@ pkgconfig
 
 ### Use as Tool
 
-Although libgpg-error is primarily a library as described above, it also contains which can be used as follows.
+Although libgpg-error is primarily a library as described above, it also contains binaries which can be used as follows.
 
 #### Installation
 
