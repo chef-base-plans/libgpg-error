@@ -45,6 +45,7 @@ control 'core-plans-libgpg-error-works' do
     command_suffix = value.has_key?(:command_suffix) ? "#{value[:command_suffix]} 2>&1" : "--help 2>&1"
     command_output_pattern = value[:command_output_pattern] || /usage:(\s+|.*)#{binary_name}/i
     exit_pattern = value[:exit_pattern] || /^[0]$/ # use /^[^0]{1}\d*$/ for non-zero exit status
+    command_full_path = File.join(plan_installation_directory.stdout.strip, "bin", binary_name)
 
     # verify output
     describe command("#{command_prefix} #{command_full_path} #{command_suffix}") do
