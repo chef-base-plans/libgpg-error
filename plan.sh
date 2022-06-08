@@ -1,12 +1,12 @@
 pkg_name=libgpg-error
 pkg_origin=core
-pkg_version=1.41
+pkg_version=1.43
 pkg_license=('GPL-2.0-or-later')
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_source="ftp://ftp.gnupg.org/gcrypt/${pkg_name}/${pkg_name}-${pkg_version}.tar.bz2"
 pkg_upstream_url="https://www.gnupg.org/software/libgpg-error/index.html"
 pkg_description="Libgpg-error is a small library that originally defined common error values for all GnuPG components."
-pkg_shasum=64b078b45ac3c3003d7e352a5e05318880a5778c42331ce1ef33d1a0d9922742
+pkg_shasum=a9ab83ca7acc442a5bd846a75b920285ff79bdb4e3d34aa382be88ed2c3aebaf
 pkg_deps=(core/glibc)
 pkg_build_deps=(
   core/gcc
